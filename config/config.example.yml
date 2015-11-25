@@ -1,0 +1,21 @@
+development:
+  solr_core: api_transmississippi_test
+  xsl_params:
+    fig_location: http://server.unl.edu/data_images/projects/transmississippi/figures/
+    file_location: http://server.unl.edu/data/projects/
+    figures: true
+    fw: true        # form works (page nums, etc)
+    pb: true        # page breaks
+    project: transmississippi
+    slug: transmississippi
+
+production:
+  solr_core: api_transmississippi_test
+  xsl_params:
+    fig_location: http://server.unl.edu/data_images/projects/transmississippi/figures/
+    file_location: http://server.unl.edu/data/projects/
+    figures: true
+    fw: true        # form works (page nums, etc)
+    pb: true        # page breaks
+    project: transmississippi
+    slug: transmississippi
