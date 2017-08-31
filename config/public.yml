@@ -1,0 +1,13 @@
+default:
+  shortname: transmississippi
+  collection_desc: "Trans-Mississippi and International Exposition"
+  # es_type
+  solr_core: nonapi_transmississippi
+  csv_solr_ruby: collections/transmississippi/scripts/nonapi_csvtosolr.rb
+  tei_solr_xsl: collections/transmississippi/scripts/nonapi_transmiss2solr.xsl
+  variables_solr:
+    slug: transmississippi
+
+  # transmississippi CSVs are not in utf-8
+  csv_encoding: "iso-8859-1"
+
