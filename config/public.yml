@@ -1,9 +1,8 @@
 default:
-  es_type: transmississippi
+  collection: transmississippi
   collection_desc: "Trans-Mississippi and International Exposition"
-  # es_type
   solr_core: nonapi_transmississippi
-  tei_solr_xsl: collections/transmississippi/scripts/nonapi_transmiss2solr.xsl
+  tei_solr_xsl: scripts/nonapi_transmiss2solr.xsl
   variables_solr:
     slug: transmississippi
 
