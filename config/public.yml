@@ -3,9 +3,15 @@ default:
   collection_desc: "Trans-Mississippi and International Exposition"
   solr_core: nonapi_transmississippi
   tei_solr_xsl: scripts/nonapi_transmiss2solr.xsl
+  threads: 20
   variables_solr:
     slug: transmississippi
 
   # transmississippi CSVs are not in utf-8
   csv_encoding: "iso-8859-1"
-
+development:
+  es_path: https://cdrhdev1.unl.edu/elastic
+  es_index: cdrhapidev-v1
+  solr_path: https://cdrhdev1.unl.edu/solr
+production:
+  solr_path: https://cors1601.unl.edu/solr
