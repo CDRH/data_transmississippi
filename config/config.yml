@@ -1,0 +1,43 @@
+csv_solr_ruby: projects/transmississippi/scripts/nonapi_csvtosolr.rb
+tei_solr_xsl: projects/transmississippi/scripts/nonapi_transmiss2solr.xsl
+
+development:
+#  csv_solr_ruby: projects/transmississippi/scripts/nonapi_csvtosolr.rb
+#  tei_solr_xsl: projects/transmississippi/scripts/nonapi_transmiss2solr.xsl
+#  solr_path: http://cors1601.unl.edu:8983/solr/
+#  solr_core: nonapi_transmississippi
+#  xsl_params:
+#    fig_location: 
+#    file_location:
+#    figures:
+#    fw:
+#    pb:
+#    project:
+#    slug:
+
+
+  # only use the below for the api version
+ #  solr_core: api_transmississippi_test
+  solr_core: api_demo
+  solr_path: http://localhost:8983/solr/
+  xsl_params:
+    fig_location: http://cdrhsites.unl.edu/data_images/projects/transmississippi/figures/
+    site_path: http://trans-mississippi.unl.edu
+    file_location: http://rosie.unl.edu/data/projects/
+    figures: true
+    fw: true        # form works (page nums, etc)
+    pb: true        # page breaks
+    project: transmississippi
+    slug: transmississippi
+
+production:
+  solr_path: http://cors1601.unl.edu:8983/solr/
+  solr_core: nonapi_transmississippi
+  xsl_params:
+    fig_location: http://cdrhsites.unl.edu/data_images/projects/transmississippi/figures/
+    file_location: http://cdrhsites.unl.edu/data/projects/
+    figures: true
+    fw: true        # form works (page nums, etc)
+    pb: true        # page breaks
+    project: transmississippi
+    slug: transmississippi
